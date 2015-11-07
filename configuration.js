@@ -1,10 +1,10 @@
 angular
 .module('webui.services.configuration',  [])
-.constant('$name', 'Aria2 WebUI')  // name used across the entire UI
+.constant('$name', 'AKFish's Aria2')  // name used across the entire UI
 .constant('$titlePattern', 'active: {active} - waiting: {waiting} - stopped: {stopped} — {name}')
 .constant('$pageSize', 11)         // number of downloads shown before pagination kicks in
 .constant('$authconf', {           // default authentication configuration, never fill it in case the webui is hosted in public IP as it can be compromised
-  host: 'localhost',
+  host: 'pi.catx.me',
   port: 6800,
   encrypt: false,
   auth: {                          // either add the token field or the user and pass field, not both.
